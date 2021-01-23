@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet');
+
+:root {
+    --font: 'Fira Sans', sans-serif;
+    
+    --background: #202124;
+    --selection:#3d4042;
+    --white:#f8f8f2;
+    --yellow:#f5d625;
+    --lightgray:#bec1c5;
+    --darkgray:#34353a;
+    --gray0:#2f3033;
+    --gray1:#34353a;
+    --gray2:#404144;
+    --gray3:#525357;
+
+}
+
+body{
+    background-color: var(--background);
+    color: var(--white);
+}
+
+footer{
+    text-align: center;
+
+    color:var(--yellow);
+
+    font-family: var(--font);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+#userPhoto{
+    width: 128px;
+    height: 128px;
+
+    display: block;
+
+    margin: 35px auto 20px;
+
+    border-radius: 50%;
+    border: solid var(--yellow) 2px;
+}
+
+#userName{
+    width: 100%;
+
+    color: var(--lightgray);
+
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 400;
+
+    text-align: center;
+    text-decoration: none;
+
+    line-height: 1.25;
+    display: block;
+}
+
+#links{
+    max-width: 675px;
+    width: auto;
+
+    display: block;
+
+    margin: 27px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link{
+    display: block;
+    margin-bottom: 20px;
+    padding: 17px;
+
+    background-color: var(--darkgray);
+    color:var(--yellow);
+
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 500;
+
+    border-radius: 5px;
+    border: solid var(--lightgrey) 1px;
+
+    text-align: center;
+    text-decoration: none;
+    
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    
+}
+
+.dark {
+    background: var(--gray0);
+  }
+  
+.medium {
+    background: var(--gray1);
+}
+  
+.light {
+   background: var(--gray2);
+}
+  
+.bright {
+    background: var(--gray3);
+}
+
+.icon-list-img {
+    height: 50px;
+    width: 50px;
+    margin: 7px;
+  }
+
+.link:hover{
+    background-color: var(--selection);
+    color: var(--yellow);
+}
